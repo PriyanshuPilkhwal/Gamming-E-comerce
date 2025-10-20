@@ -1,8 +1,179 @@
-🎮 GameStore - Modern E-Commerce PlatformA sleek, high-performance web application for browsing and purchasing video games, inspired by modern digital storefronts.This project is a feature-rich demonstration of a modern e-commerce storefront, built from the ground up with a focus on polished user experience, clean architecture, and exceptional performance.✨ Live Demo[Link to your live demo] (e.g., https://gamestore-demo.vercel.app)📸 ScreenshotsHome Page (Epic Games Style Hero)Product Detail Page (Trailer & Details)Browse & Filter GamesBranded Login Page✨ Core FeaturesDynamic Hero Section: An immersive, auto-rotating hero banner inspired by the Epic Games Store, featuring trending games and high-quality artwork.Advanced Search: A fast, fuzzy search powered by Fuse.js, accessible via a "/" keyboard shortcut, with instant type-ahead results.Comprehensive Game Catalog: Browse, filter, and sort a large library of games with detailed product cards, deals, and free-to-play sections.Guest Browsing & Authentication: Users can freely browse the store and are prompted to sign in only when performing actions like adding to the cart.Rich Product Detail Pages: Dynamically generated pages featuring auto-playing trailers, an interactive media gallery, AI-generated descriptions, and detailed system requirements.Shopping Cart & Preview: A persistent shopping cart with a mini-preview accessible from the navigation bar.Mock API Backend: Utilizes Mock Service Worker (MSW) to simulate a real-world API, ensuring a realistic development and testing experience.Exceptional Performance: Achieves outstanding Lighthouse scores, verified by running tests on a production build.Fully Responsive: A beautiful, mobile-first design that adapts seamlessly to all screen sizes.🚀 Tech StackCategoryTechnologyFrameworkReact 18, TypeScriptBundlerViteStylingTailwind CSSRoutingReact Router v6Server StateTanStack Query (React Query)Client StateZustandAnimationsFramer MotionFuzzy SearchFuse.jsAPI MockingMock Service Worker (MSW)UI ComponentsHeadless UI⚙️ Getting StartedTo get a local copy up and running, follow these simple steps.Clone the repository:git clone [https://github.com/PriyanshuPilkhwal/Gamming-E-comerce.git](https://github.com/PriyanshuPilkhwal/Gamming-E-comerce.git)
+# 🎮 GameStore - Modern E-Commerce Platform
+
+A sleek, high-performance web application for browsing and purchasing video games, inspired by modern digital storefronts.
+
+This project is a feature-rich demonstration of a modern e-commerce storefront, built from the ground up with a focus on polished user experience, clean architecture, and exceptional performance.
+
+---
+
+## 📸 Screenshots
+
+| Screen                       |                                                                     Description | File                           |
+| ---------------------------- | ------------------------------------------------------------------------------: | :----------------------------- |
+| Home (Epic Games Style Hero) | Immersive hero banner with auto-rotating featured games and trailer background. | `./screenshots/home.jpg.png`   |
+| Product Detail Page          |                   Trailer, image gallery, system requirements and purchase CTA. | `./screenshots/detail.jpg`     |
+| Browse & Filter              |                              Catalog grid with filters, sorting and pagination. | `./screenshots/browse.jpg`     |
+| Login / Auth                 |                                   Branded login flow with social/guest options. | `./screenshots/login.png`      |
+| Lighthouse / Performance     |                             Lighthouse report showing optimizations and scores. | `./screenshots/lighthouse.png` |
+
+> Put the `screenshots/` folder at the project root and commit these files so the images render on GitHub.
+
+---
+
+## ✨ Core Features (tabular)
+
+| Feature                 | Description                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------- |
+| Dynamic Hero Section    | Auto-rotating hero inspired by Epic Games with trending games and trailer background. |
+| Advanced Search         | Fuzzy search (Fuse.js) with "/" shortcut and type-ahead results.                      |
+| Game Catalog            | Browse, filter, and sort a large library of games with product cards and badges.      |
+| Product Details         | Rich pages with trailer, gallery, system requirements and reviews.                    |
+| Cart & Checkout (Mock)  | Persistent cart, mini-preview, and a mocked checkout flow via MSW or Stripe test.     |
+| Mock API                | MSW provides a realistic mock backend for development and tests.                      |
+| Responsive & Accessible | Mobile-first design, keyboard accessibility, ARIA attributes, and focus management.   |
+| PWA-ready (optional)    | Service worker + caching for improved offline UX (if enabled).                        |
+
+---
+
+## 🚀 Tech Stack (tabular)
+
+| Category     | Technology                           |
+| ------------ | ------------------------------------ |
+| Framework    | React 18 + TypeScript                |
+| Bundler      | Vite                                 |
+| Styling      | Tailwind CSS                         |
+| Routing      | React Router v6                      |
+| Server State | TanStack Query (React Query)         |
+| Client State | Zustand                              |
+| Animations   | Framer Motion                        |
+| Fuzzy Search | Fuse.js                              |
+| API Mocking  | Mock Service Worker (MSW)            |
+| UI           | Headless UI / shadcn (optional)      |
+| Testing      | Jest, React Testing Library, Cypress |
+
+---
+
+## ⚙️ Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/PriyanshuPilkhwal/Gamming-E-comerce.git
 cd Gamming-E-comerce
-Install NPM packages:npm install
-Generate the MSW Service Worker:This step is required for the mock API to function.npx msw init public/ --save
-Run the development server:npm run dev
-The application will be available at http://localhost:5173.📈 Performance TestingTo replicate the high Lighthouse scores, run a production build:Build for production:npm run build
-Preview the production build:npm run preview
-Then, use the Lighthouse tab in your browser's developer tools to analyze the preview URL.
+```
+
+### Install dependencies
+
+```bash
+npm install
+# or
+# yarn
+# pnpm install
+```
+
+### Generate the MSW Service Worker
+
+This step is required for the mock API to function locally and for tests.
+
+```bash
+npx msw init public/ --save
+```
+
+### Environment (optional)
+
+Create a `.env` file at project root for environment overrides (example):
+
+```env
+VITE_API_BASE_URL=/api
+VITE_STRIPE_PUBLIC_KEY=pk_test_xxx
+```
+
+> The project uses MSW by default; you do not need a real backend for the dev demo.
+
+### Run development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) (or the Vite-provided URL).
+
+---
+
+## 📦 NPM Scripts (table)
+
+| Script                        | What it does                             |
+| ----------------------------- | ---------------------------------------- |
+| `npm run dev`                 | Start local dev server (Vite)            |
+| `npm run build`               | Build production assets                  |
+| `npm run preview`             | Preview production build locally         |
+| `npm run test`                | Run unit tests (Jest + RTL)              |
+| `npm run cypress`             | Open Cypress test runner                 |
+| `npx msw init public/ --save` | Generate MSW service-worker in `public/` |
+
+---
+
+## 📈 Performance Testing
+
+To replicate high Lighthouse scores locally:
+
+```bash
+npm run build
+npm run preview
+# open the preview URL in your browser and run Lighthouse in DevTools
+```
+
+Tips to improve scores included in the repo:
+
+* Image optimization (webp, responsive `srcset`).
+* Code-splitting and route-based lazy loading.
+* Prefetch product pages on hover.
+* Reduce third-party scripts in the header.
+* Use `getStaticProps` / SSG (Next.js) or pre-rendering when applicable.
+
+---
+
+## 🧪 Testing
+
+* Unit & component tests with **Jest** + **React Testing Library**. Key logic (cart, price calculations, filtering) is covered.
+* E2E tests with **Cypress** for core flows (search → add to cart → checkout → order confirmation).
+* MSW is used in tests to stub API responses for deterministic results.
+
+Run:
+
+```bash
+npm run test
+npm run cypress
+```
+
+---
+
+## 🧭 Project Architecture (overview table)
+
+| Layer            | Purpose                                                     |
+| ---------------- | ----------------------------------------------------------- |
+| `src/pages`      | Route entry points (React Router or Next.js pages)          |
+| `src/features`   | Feature folders (product, cart, auth, checkout)             |
+| `src/components` | Shared presentational components (Header, Footer, GameCard) |
+| `src/hooks`      | Reusable hooks (useCart, useAuth, useSearch)                |
+| `src/services`   | API clients, payment adapter, msw handlers                  |
+| `src/store`      | Zustand stores for client state (cart, auth)                |
+| `src/styles`     | Tailwind configuration and global styles                    |
+
+---
+
+## ⚠️ Known Limitations
+
+* Payment is simulated (Stripe test keys or mocked). Do not use real API keys in the repo.
+* The mock dataset is limited — seed data is included to highlight UI and filtering behavior.
+* Some advanced features (recommendation engine, real-time stock) are demo-only and not production-ready.
+
+---
+
+## 📬 Contact
+
+Maintainer: Priyanshu Pilkhwal
+
+GitHub: [https://github.com/PriyanshuPilkhwal/Gamming-E-comerce](https://github.com/PriyanshuPilkhwal/Gamming-E-comerce)
+
+---
