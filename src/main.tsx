@@ -13,7 +13,7 @@ async function enableMocking() {
   // can run in the "preview" environment as well.
   // This allows us to test the production build locally with mock data.
   
-  const { worker } = await import('./mocks/browser.tsx')
+  const { worker } = await import('./mocks/browser.ts')
  
   // `worker.start()` returns a Promise that resolves
   // once the Service Worker is ready.

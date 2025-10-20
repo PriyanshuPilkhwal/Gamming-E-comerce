@@ -4,35 +4,23 @@ A sleek, high-performance web application for browsing and purchasing video game
 
 This project is a feature-rich demonstration of a modern e-commerce storefront, built from the ground up with a focus on polished user experience, clean architecture, and exceptional performance.
 
-✨ Live Demo
-
-[Link to your live demo] (e.g., https://gamestore-demo.vercel.app)
-
 📸 Screenshots
 
-Home Page (Hero)
+Home Page (Epic Games Style Hero)
 
-Product Detail Page
+Product Detail Page (Trailer & Details)
 
-public/home.jpg
 
-public/detail.jpg
 
-Browse & Filter
+Add your detail page screenshot here
 
-Search Results
+Browse & Filter Games
 
-public/browse.jpg
+Branded Login Page
 
-public/search.jpg
 
-Login Page
 
-Lighthouse Score
 
-public/login.png
-
-public/lighthouse.png
 
 ✨ Core Features
 
@@ -40,7 +28,7 @@ Dynamic Hero Section: An immersive, auto-rotating hero banner inspired by the Ep
 
 Advanced Search: A fast, fuzzy search powered by Fuse.js, accessible via a "/" keyboard shortcut, with instant type-ahead results.
 
-Comprehensive Game Catalog: Browse, filter, and sort a large library of games with detailed product cards.
+Comprehensive Game Catalog: Browse, filter, and sort a large library of games with detailed product cards, deals, and free-to-play sections.
 
 Guest Browsing & Authentication: Users can freely browse the store and are prompted to sign in only when performing actions like adding to the cart.
 
@@ -50,7 +38,7 @@ Shopping Cart & Preview: A persistent shopping cart with a mini-preview accessib
 
 Mock API Backend: Utilizes Mock Service Worker (MSW) to simulate a real-world API, ensuring a realistic development and testing experience.
 
-Exceptional Performance: Achieves outstanding Lighthouse scores across Performance, Accessibility, Best Practices, and SEO.
+Exceptional Performance: Achieves outstanding Lighthouse scores, verified by running tests on a production build.
 
 Fully Responsive: A beautiful, mobile-first design that adapts seamlessly to all screen sizes.
 
@@ -106,8 +94,8 @@ To get a local copy up and running, follow these simple steps.
 
 Clone the repository:
 
-git clone [your-repository-url]
-cd react-ecommerce-store
+git clone [https://github.com/PriyanshuPilkhwal/Gamming-E-comerce.git](https://github.com/PriyanshuPilkhwal/Gamming-E-comerce.git)
+cd Gamming-E-comerce
 
 
 Install NPM packages:
@@ -143,5 +131,3 @@ npm run preview
 
 
 Then, use the Lighthouse tab in your browser's developer tools to analyze the preview URL.
-
-This README will give anyone visiting your project's repository a fantastic first impression, clearly outlining its features, quality, and technical excellence.
