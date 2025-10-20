@@ -8,15 +8,17 @@ This project is a feature-rich demonstration of a modern e-commerce storefront, 
 
 ## 📸 Screenshots
 
-| Screen                       |                                                                     Description | File                           |
-| ---------------------------- | ------------------------------------------------------------------------------: | :----------------------------- |
-| Home (Epic Games Style Hero) | Immersive hero banner with auto-rotating featured games and trailer background. | `./screenshots/home.jpg.png`   |
-| Product Detail Page          |                   Trailer, image gallery, system requirements and purchase CTA. | `./screenshots/detail.jpg`     |
-| Browse & Filter              |                              Catalog grid with filters, sorting and pagination. | `./screenshots/browse.jpg`     |
-| Login / Auth                 |                                   Branded login flow with social/guest options. | `./screenshots/login.png`      |
-| Lighthouse / Performance     |                             Lighthouse report showing optimizations and scores. | `./screenshots/lighthouse.png` |
+Below are inline previews of the key screens. Make sure the `screenshots/` folder sits at the project root and contains the exact filenames used below so GitHub renders them correctly.
 
-> Put the `screenshots/` folder at the project root and commit these files so the images render on GitHub.
+| Screen                       | Preview                                     |
+| ---------------------------- | ------------------------------------------- |
+| Home (Epic Games Style Hero) | ![Home Page](./screenshots/home.jpg.png)    |
+| Product Detail Page          | ![Product Detail](./screenshots/detail.jpg) |
+| Browse & Filter              | ![Browse](./screenshots/browse.jpg)         |
+| Login / Auth                 | ![Login](./screenshots/login.png)           |
+| Lighthouse / Performance     | ![Lighthouse](./screenshots/lighthouse.png) |
+
+
 
 ---
 
@@ -120,16 +122,6 @@ To replicate high Lighthouse scores locally:
 ```bash
 npm run build
 npm run preview
-# open the preview URL in your browser and run Lighthouse in DevTools
-```
-
-Tips to improve scores included in the repo:
-
-* Image optimization (webp, responsive `srcset`).
-* Code-splitting and route-based lazy loading.
-* Prefetch product pages on hover.
-* Reduce third-party scripts in the header.
-* Use `getStaticProps` / SSG (Next.js) or pre-rendering when applicable.
 
 ---
 
@@ -162,6 +154,7 @@ npm run cypress
 
 ---
 
+
 ## ⚠️ Known Limitations
 
 * Payment is simulated (Stripe test keys or mocked). Do not use real API keys in the repo.
@@ -177,3 +170,6 @@ Maintainer: Priyanshu Pilkhwal
 GitHub: [https://github.com/PriyanshuPilkhwal/Gamming-E-comerce](https://github.com/PriyanshuPilkhwal/Gamming-E-comerce)
 
 ---
+
+
+
